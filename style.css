@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0
+}
+:root{
+    --main-color:#0F0F1B;
+    --secondary-color:#24273e;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-color);
+}
+header{
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+header #search{
+    background-color: transparent;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+    color:#7e8090;
+    border: 2px solid var(--main-color);
+}
+#search::placeholder{
+    color: #7e8090;
+}
+#search:focus{
+    outline: none;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.movie img{
+    max-width: 100%;
+}
+.movie{
+   width: 300px;
+   background-color: var(--secondary-color); 
+   border-radius: 5px;
+   overflow: hidden;
+   margin: 1rem;
+   position: relative;
+   box-shadow: 0px 4px 5px rgba(0,0, 0, .3);
+}
+.movie .movie-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    color: #eee;
+}
+.movie-info span{
+    padding: .25rem .5rem;
+    background-color: var(--main-color);
+    border-radius: 3px;
+}
+.movie-info span.green{
+    color:lightgreen
+}
+.movie-info span.orange{
+    color:orange
+}
+.movie-info span.red{
+    color:red
+}
+.movie-overview{
+    background-color: white;
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform .5s ease-in-out;
+    max-height: 100%;
+}
+.movie:hover .movie-overview{
+    transform: translateY(0);
+}
+.movie-overview h3{
+    margin-bottom: 10px;
+}
+.buttons i{
+    outline: none;
+    padding: 1rem;
+    margin:10px;
+    background-color: #7e8090;
+    color: var(--main-color);
+    cursor: pointer;
+    /* position: relative;
+    left: 50%;
+    transform: translateX(-50%); */
+    border-radius: 5px;
+}
+button .fa-angles-right{
+    margin-right: 10px
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:767px){
+    .movie{
+        width: 95%;
+    }
+}
