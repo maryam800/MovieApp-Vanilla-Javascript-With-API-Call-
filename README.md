@@ -1,4 +1,4 @@
 # MovieApp-Vanilla-Javascript-With-API-Call-
-![Screenshot](movieapp1.png)
-![Screenshot](movieapp2.png)
+![Screenshot](https://imgur.com/x6TJXqq)
+![Screenshot](https://imgur.com/gZ5nIIR)
 
